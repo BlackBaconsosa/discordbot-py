@@ -22,8 +22,8 @@ async def on_message(message):
     if message.content == f'{PREFIX}call':
         await message.channel.send("callback!")
 
-    if message.content.startswith(f'{PREFIX}hello'):
-        await message.channel.send('Hello!')
+    if message.content.startswith(f'{PREFIX}처리'):
+        await message.channel.send('처리가 완료되었습니다! 문화상품권 지급은 몆시간, 길면 몆일 후에 지급될수 있으니 양해부탁드립니다..!')
 
 
 try:
