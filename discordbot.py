@@ -23,7 +23,10 @@ async def on_message(message):
         await message.channel.send("callback!")
 
     if message.content.startswith(f'{PREFIX}처리'):
-        await message.channel.send('처리가 완료되었습니다! 문화상품권 지급은 몆시간, 길면 몆일 후에 지급될수 있으니 양해부탁드립니다..!')
+        await message.channel.send('처리가 완료되었습니다! 문화상품권 지급은 몆시간, 길면 몆일 후에 지급될수 있으니 양해부탁드립니다...! (DM으로 전송됩니다!')
+        
+    if message.content.startswith(f'{PREFIX}랜덤숫자뽑기'):
+        await message.channel.send(str(random.randrange(1,100)))
 
 
 try:
